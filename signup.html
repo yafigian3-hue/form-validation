@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- tailwindcss v3 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {},
+        plugins: [],
+      };
+    </script>
+    <title>Sign Up</title>
+  </head>
+  <body class="flex h-screen bg-white">
+    <div class="w-full max-w-xs m-auto bg-gray-200 rounded p-5">
+      <h1 class="text-center text-indigo-500 font-bold text-2xl mb-5">
+        Sign Up
+      </h1>
+
+      <form id="signupForm">
+        <label class="block mb-2 text-indigo-500">Name</label>
+        <input
+          class="w-full p-2 mb-4 border-b-2 border-indigo-500"
+          name="name"
+        />
+
+        <label class="block mb-2 text-indigo-500">Email</label>
+        <input
+          class="w-full p-2 mb-4 border-b-2 border-indigo-500"
+          name="email"
+        />
+
+        <label class="block mb-2 text-indigo-500">Password</label>
+        <input
+          type="password"
+          class="w-full p-2 mb-4 border-b-2 border-indigo-500"
+          name="password"
+        />
+
+        <button
+          class="w-full bg-indigo-700 text-white py-2 rounded"
+          type="submit"
+        >
+          Create Account
+        </button>
+      </form>
+
+      <a class="text-indigo-700 text-sm" href="index.html"
+        >Already have an account?</a
+      >
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

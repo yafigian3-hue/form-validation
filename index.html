@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwindcss v3 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {},
+        plugins: [],
+      };
+    </script>
+
+    <title>form validation</title>
+  </head>
+  <body class="flex h-screen bg-white">
+    <div class="w-full max-w-xs m-auto bg-gray-200 rounded p-5">
+      <header>
+        <h1 class="text-center text-indigo-500 font-bold text-2xl mb-5">
+          Login
+        </h1>
+      </header>
+
+      <form id="loginForm">
+        <div>
+          <label class="block mb-2 text-indigo-500" for="username">Email</label>
+          <input
+            class="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-100"
+            type="email"
+            name="email"
+          />
+        </div>
+        <div>
+          <label class="block mb-2 text-indigo-500" for="password"
+            >Password</label
+          >
+          <input
+            class="w-full p-2 mb-6 text-indigo-700 border-b-2 border-indigo-500 outline-none focus:bg-gray-100"
+            type="password"
+            name="password"
+          />
+        </div>
+        <div>
+          <input
+            class="w-full bg-indigo-700 hover:bg-indigo-950 text-white font-bold py-2 px-4 mb-6 rounded"
+            type="submit"
+          />
+        </div>
+      </form>
+        <a class="text-indigo-700 hover:text-indigo-950 text-sm" href="signup.html"
+          >Create Account</a
+        >
+    </div>
+    <script src="app.js"></script>
+
+  </body>
+</html>

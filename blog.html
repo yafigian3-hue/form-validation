@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {},
+        plugins: [],
+      };
+    </script>
+    <title>Dashboard</title>
+
+  </head>
+  <body class="flex h-screen bg-white">
+    <div class="w-full max-w-xs m-auto bg-gray-200 rounded p-5">
+      <h1 id="welcome" class="text-2xl font-bold text-indigo-600 mb-5"></h1>
+
+      <button id="logoutBtn" class="w-full bg-indigo-700 hover:bg-indigo-950 text-white font-bold py-2 px-4 mb-6 rounded">
+        Logout
+      </button>
+
+      <button id="hapus" class="w-full bg-indigo-700 hover:bg-indigo-950 text-white font-bold py-2 px-4 mb-6 rounded">
+        delete account
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
